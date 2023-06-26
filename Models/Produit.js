@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-exports.Produit = mongoose.model('produits', {
+const Produit = mongoose.model('produits', {
   titre : String,
   description : String,
   date : {
@@ -8,4 +8,6 @@ exports.Produit = mongoose.model('produits', {
     default : new Date(),
   }
 });
+
+module.exports = Produit;
 
