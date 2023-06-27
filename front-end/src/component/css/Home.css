@@ -1,0 +1,16 @@
+.btn-show{
+  background-color: #EA5455;
+  color: #002B5B;
+
+  font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+.btn-show:hover{
+  background-color: #002B5B;
+  color: #FFF;
+
+}
+
+.card{
+  background-color : #002B5B;
+  color : #FFF
+}
