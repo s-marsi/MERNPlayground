@@ -5,6 +5,12 @@ const connectingMongoDb = require("./Db/db");
 
 const routerProduit = require("./Routes/ProduitRouter");
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 require("dotenv").config();
 app.use(express.urlencoded({extended : false}));
 
